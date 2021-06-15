@@ -1,0 +1,509 @@
+body{
+  background-color: #FFBEBC;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 10px;
+}
+
+#wrap{
+  width: 1315px;
+  height: auto;
+  margin: 10 px auto;
+  padding: 10px;
+}
+
+/*header*/
+.header{
+  background-color: black;
+  padding: 10px;
+  background: #FBE4FF;
+}
+
+.header h1{
+    float: left;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: inherit;
+    white-space: nowrap;
+    color: white;
+    margin-bottom: 0;
+    background: -webkit-linear-gradient(right, #D35400, #F39C12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nama {
+    width: 100%; 
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu ul{
+  background-color: #FBE4FF;
+  list-style: none;
+  overflow: hidden;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.menu ul li{
+  float: right;
+  padding-left: 20px;
+  display: flex;
+  flex-basis: auto;
+}
+
+.menu a{
+    color: #F39C12;
+    font-weight: 300;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a : hover{
+    display: block;
+}
+
+.menu ul li : hover ul{
+    display: block;
+}
+
+
+/*content*/
+
+/*nama+foto*/
+.box{
+    background: #FBE4FF;
+    padding: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas:'myArea myArea . .' 'myArea myArea . .';
+}
+
+.buat{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 20px;
+
+}
+
+.buat h3{
+    font-size: 26px;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #D35400;
+}
+
+.buat h1{
+    font-size: 70px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(right, #D35400, #F39C12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 87px;
+}
+
+.kotak-foto{
+  filter: drop-shadow(-3px 17px 8px rgba(0, 0, 0, 0.3));
+  grid-area: myArea;
+  margin: 0;
+}
+
+.kotak-foto img{
+  width: 60%;
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+/*buat semua*/
+.kotak{
+    padding: 20px;
+    background: #FBE4FF;
+    margin-top: 10px;
+}
+
+/*About*/
+.About{
+    padding: 20px;
+    background: #FBE4FF;
+    margin-top: 10px;
+}
+
+.About h1{
+    font-size: 40px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(right, #D35400, #F39C12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 50px;
+}
+
+/*resume*/
+.resume{
+    padding: 20px;
+    background: #FBE4FF;
+    margin-top: 10px;
+}
+
+.resume h1{
+    font-size: 40px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(right, #D35400, #F39C12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 50px;
+    text-align: center;
+}
+
+        /*education*/
+        .education{
+            padding: 20px;
+            background: #FBE4FF;
+            margin-top: 10px;
+        }
+        .education h1{
+            font-size: 40px;
+            font-weight: 700;
+            background: -webkit-linear-gradient(right, #D35400, #F39C12);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .timeline{
+            padding: 90px 0px 0px 0px;
+            width: 80%;
+            height: auto;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline ul{
+            list-style: none;
+        }
+
+        .timeline ul li{
+            padding: 20px;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .timeline ul li : last-child{
+            margin-bottom: 0;
+        }
+
+        .timeline-content h2{
+            font-size: 25px;
+            font-weight: 1000;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-content p{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 300;
+        }
+
+        @media only screen and (min-width: 1000px){
+            /*garis*/
+            .timeline::before {
+                content: " ";
+                position: absolute;
+                height: 80%;
+                width: 2px;
+                left: 40%;
+                transform: translate(-40%);
+                background-color: white;
+                margin-top: -90px;
+            }
+            /*kotak*/
+            .timeline ul li{
+                width: 50%;
+                margin-bottom: 30px;
+                position: relative;
+                transform: translate(65%,-65%);
+                right: -30px;
+                margin-top: 30px;
+                border-radius: 0px 20px 20px 20px;
+            }
+            /*buletan*/
+            .timeline ul li::after{
+                content: " ";
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                background-color: #FFBEBC;
+                border-radius: 50%;
+                top: 0;
+                transform: translate(35%,-35%);
+                left: -40px;
+            }
+        }
+
+        /*organisasi*/
+        .organisasi{
+            padding: 20px;
+            background: #FBE4FF;
+            margin-top: 10px;
+        }
+
+        .organisasi h1{
+            font-size: 40px;
+            font-weight: 700;
+            background: -webkit-linear-gradient(right, #D35400, #F39C12);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .skill{
+            padding: 20px;
+            background: #FBE4FF;
+            margin-top: 10px;
+        }
+
+        .skill h2{
+            font-size: 40px;
+            font-weight: 700;
+            background: -webkit-linear-gradient(right, #D35400, #F39C12);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 50px;
+            text-align: center;
+        }
+
+/*portofolio*/
+.portofolio{
+    padding: 20px;
+    background: #FBE4FF;
+    margin-top: 10px;
+}
+
+.portofolio h1{
+    font-size: 40px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(right, #D35400, #F39C12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*kontak*/
+.kontak{
+    padding: 20px;
+    background: #FBE4FF;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.kontak h2{
+    font-size: 40px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(right, #D35400, #F39C12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 50px;
+    text-align: center;
+}
+
+.bagian-kontak{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-kontak{
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.info-kontak i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.pesan-kontak{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.info-kontak .pesan-kontak{
+    flex: 1;
+}
+
+.pesan-kontak .text-box{
+    background: white;
+    color: black ;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+    margin-left: 10px;
+}
+
+.pesan-kontak .text-box : first-child{
+    margin-right: 15px;
+}
+
+.pesan-kontak textarea{
+    background: white;
+    color: black;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+    margin-left: 10px;
+}
+
+.pesan-kontak .send-btn{
+    float: right;
+    background: #FFBEBC;
+    color: black;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.36;
+    transition-property: background;
+}
+
+.pesan-kontak .send-btn : hover{
+    background: #FFBEBC;
+}
+
+@media screen and (max-width: 950px){
+    .kontak h2{
+        flex-direction: column;
+    }
+    .bagian-kontak{
+        flex-direction: column;
+    }
+
+    .info-kontak, .pesan-kontak{
+        margin: 30px 50px;
+    }
+
+    .pesan-kontak .text-box{
+        width: 100%;
+    }
+}
+
+/*message start*/
+.alert-success{
+    z-index: 1;
+    background: white;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px black;
+    border-radius: 4px;
+}
+
+.alert-error{
+    z-index: 1;
+    background: #F39C12;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px red;
+    border-radius: 4px;
+}
+
+/*footer*/
+.footer{
+  background-color: black;
+  padding: 20px;
+  background: #FBE4FF;
+  color: black;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
